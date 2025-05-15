@@ -18,7 +18,11 @@ A sleek and modern AI-themed React.js UI template built with scalability and per
 ✨ Easily customizable components
 
 📸 Screenshots
-
+<img src="https://github.com/officiallyitsanil/nexus-ai-theme/blob/main/1.png" />
+<img src="https://github.com/officiallyitsanil/nexus-ai-theme/blob/main/2.png" />
+<img src="https://github.com/officiallyitsanil/nexus-ai-theme/blob/main/3.png" />
+<img src="https://github.com/officiallyitsanil/nexus-ai-theme/blob/main/4.png" />
+<img src="https://github.com/officiallyitsanil/nexus-ai-theme/blob/main/5.png" />
 
 🛠️ Getting Started
 1. Clone the Repo
