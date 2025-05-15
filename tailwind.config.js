@@ -1,0 +1,142 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          50: '#f5f3ff',
+          100: '#ede8ff',
+          200: '#dcd6ff',
+          300: '#c4b5ff',
+          400: '#a78bff',
+          500: '#8a2be2', // primary purple
+          600: '#7622c7',
+          700: '#641eab',
+          800: '#521a8c',
+          900: '#461874',
+          950: '#2e0d5a',
+        },
+        secondary: {
+          50: '#eefbfb',
+          100: '#d5f3f4',
+          200: '#ade8ea',
+          300: '#74d7db',
+          400: '#3ec2c8',
+          500: '#20b2aa', // secondary teal
+          600: '#168e8d',
+          700: '#16706f',
+          800: '#175a5a',
+          900: '#174b4b',
+          950: '#063333',
+        },
+        accent: {
+          50: '#fff1fa',
+          100: '#ffe4f6',
+          200: '#ffc9ed',
+          300: '#ff9fdd',
+          400: '#ff69b4', // accent pink
+          500: '#fa3a9f',
+          600: '#e81e83',
+          700: '#c80e67',
+          800: '#a70f55',
+          900: '#8c1147',
+          950: '#570428',
+        },
+        success: {
+          50: '#eefef6',
+          100: '#d6fceb',
+          200: '#b0f8d6',
+          300: '#74f0b7',
+          400: '#36e191',
+          500: '#0eca6b',
+          600: '#06a356',
+          700: '#088244',
+          800: '#0a6638',
+          900: '#0a5530',
+          950: '#01301a',
+        },
+        warning: {
+          50: '#fff9eb',
+          100: '#ffefc7',
+          200: '#ffde8a',
+          300: '#ffc54d',
+          400: '#ffa61e',
+          500: '#ff8800',
+          600: '#e36b00',
+          700: '#bc4c03',
+          800: '#973a0a',
+          900: '#7b310d',
+          950: '#461803',
+        },
+        error: {
+          50: '#fff1f1',
+          100: '#ffdfdf',
+          200: '#ffc5c5',
+          300: '#ff9c9c',
+          400: '#ff6363',
+          500: '#ff3333',
+          600: '#ed1515',
+          700: '#c80e0e',
+          800: '#a61010',
+          900: '#891414',
+          950: '#4b0404',
+        },
+        neutral: {
+          50: '#f7f7f8',
+          100: '#eeeef0',
+          200: '#d9d9de',
+          300: '#b9b9c2',
+          400: '#9292a0',
+          500: '#757584',
+          600: '#5e5e6c',
+          700: '#4c4c57',
+          800: '#41414a',
+          900: '#383840',
+          950: '#26262d',
+        },
+      },
+      fontFamily: {
+        sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'sans-serif'],
+        display: ['Satoshi', 'Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'sans-serif'],
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'hero-pattern': 'linear-gradient(120deg, #8a2be2 0%, #20b2aa 50%, #ff69b4 100%)',
+      },
+      animation: {
+        'text-gradient': 'text-gradient 5s ease infinite',
+        'background-shine': 'background-shine 2s linear infinite',
+        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'bounce-slow': 'bounce 3s infinite',
+      },
+      keyframes: {
+        'text-gradient': {
+          '0%, 100%': {
+            'background-size': '200% 200%',
+            'background-position': 'left center',
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'right center',
+          },
+        },
+        'background-shine': {
+          'from': {
+            'backgroundPosition': '0 0',
+          },
+          'to': {
+            'backgroundPosition': '-200% 0',
+          },
+        },
+      },
+      boxShadow: {
+        'glass': '0 4px 30px rgba(0, 0, 0, 0.1)',
+        'glass-hover': '0 8px 32px rgba(0, 0, 0, 0.15)',
+        'button': '0 2px 10px rgba(138, 43, 226, 0.3)',
+        'button-hover': '0 4px 20px rgba(138, 43, 226, 0.5)',
+      },
+    },
+  },
+  plugins: [],
+};
